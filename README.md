@@ -15,7 +15,7 @@ sudo apt install can-utils
 https://vimtut0r.com/2017/01/17/can-bus-with-raspberry-pi-howtoquickstart-mcp2515-kernel-4-4-x/
 
 Use the following lines in _boot/config.txt_ instead of the lines in the tutorial if they don't work:
-
+Also, the VCC on your CAN Transciever should be connected to the 5V of your RPi rather than another external 5V source.
 
 
 #Useful can-utils bash commands:
