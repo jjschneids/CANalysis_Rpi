@@ -11,7 +11,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.end_headers()
-        logfile = open("CanReadings.txt", "rb")
+        logfile = open("CanReadings.txt", "rb") #rb = read file as bytes
         while True:
             file_data = logfile.read(32768)
             if file_data is None or len(file_data) == 0:
